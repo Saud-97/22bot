@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.once('ready', () => {
   console.log('Ready!');
 
-client.user.setActivity('s97.glitch.me/ ', { type: 'LISTENING' });
+client.user.setActivity('22 Community Grow ', { type: 'WATCHING' });
 
 });
 
