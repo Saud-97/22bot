@@ -5,8 +5,8 @@ client.once('ready', () => {
   console.log('Ready!');
 
 //client.user.setActivity('22 Community Thrive ', { type: 'WATCHING' });
-    client.user.setStatus('STREAMING');
-client.user.setPresence({ activity: { name: 'S97 CODE', type: 'PLAYING' }, status: 'idle' })
+    client.user.setStatus('DND');
+client.user.setPresence({ activity: { name: 'S97 CODE', type: 'STREAMING' }, status: 'DND' })
   .then(console.log)
   .catch(console.error);
   
