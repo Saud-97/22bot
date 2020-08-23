@@ -5,11 +5,11 @@ client.once('ready', () => {
   console.log('Ready!');
 
 //client.user.setActivity('22 Community Thrive ', { type: 'WATCHING' });
-try {
-           client.user.setStatus('dnd', 'Made by S97') 
 
-      } catch{
-      }
+client.user.setPresence({ activity: { name: 'Made by S97' }, status: 'dnd' })
+  .then(console.log)
+  .catch(console.error);
+  
 });
 
 client.on('message', message => {
