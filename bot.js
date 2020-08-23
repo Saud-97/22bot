@@ -6,7 +6,7 @@ client.once('ready', () => {
 
 //client.user.setActivity('22 Community Thrive ', { type: 'WATCHING' });
     client.user.setStatus('DND');
-client.user.setPresence({ activity: { name: 'to S97 Commands', type: 'LISTENING' }, status: 'idle' })
+client.user.setPresence({ activity: { name: 'S97 Commands', type: 'LISTENING' }, status: 'idle' })
 //  client.user.setPresence({ activity: { name: 'with S97 Code'}, status: 'idle' })
   .then(console.log)
   .catch(console.error);
