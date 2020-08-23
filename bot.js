@@ -4,7 +4,8 @@ const client = new Discord.Client();
 client.once('ready', () => {
   console.log('Ready!');
 
-client.user.setActivity('22 Community Thrive ', { type: 'WATCHING' });
+//client.user.setActivity('22 Community Thrive ', { type: 'WATCHING' });
+    client.user.setStatus('dnd', 'Made by S97') 
 
 });
 
