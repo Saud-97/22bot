@@ -22,7 +22,7 @@ client.on('message', message => {
     try {
      message.guild.members.cache.get(userid).setNickname("²² | "+name.replace("²² | "," "))
      message.react("👍")
-     message.reply("done renaming <@!"+userid+">"); 
+     message.channel.send("done renaming <@!"+userid+">"); 
      setTimeout(function(){
       message.delete()
     }, 1000);
