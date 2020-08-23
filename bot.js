@@ -15,17 +15,18 @@ client.on('message', message => {
 
   }
 
-  if(message.channel.id == "737441478053331025" && message.content.startsWith("rename")){
+  if(message.channel.id == "733457493623177266" && message.content.startsWith("rename")){
     var arr = message.content.replace("rename ","").split(" ",2)
     var userid = arr[0]
     var name = message.content.replace("rename "+userid+" ","")
     try {
      message.guild.members.cache.get(userid).setNickname("²² | "+name.replace("²² | "," "))
      message.react("👍")
+     message.reply("done renaming <@!"+userid+">"); 
      setTimeout(function(){
       message.delete()
     }, 1000);
-    
+
     } catch (error) {
       console.log(error)
     }
