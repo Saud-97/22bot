@@ -24,7 +24,7 @@ client.on('message', message => {
      message.react("👍")
      message.channel.send("Done renaming <@!"+userid+">"); 
      setTimeout(function(){
-      message.delete()
+    //  message.delete()
     }, 1000);
 
     } catch (error) {
