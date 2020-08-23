@@ -6,7 +6,8 @@ client.once('ready', () => {
 
 //client.user.setActivity('22 Community Thrive ', { type: 'WATCHING' });
     client.user.setStatus('DND');
-client.user.setPresence({ activity: { name: 'with S97 Code', type: 'playing' }, status: 'idle' })
+//client.user.setPresence({ activity: { name: 'with S97 Code', type: 'playing' }, status: 'idle' })
+  client.user.setPresence({ activity: { name: 'with S97 Code'}, status: 'idle' })
   .then(console.log)
   .catch(console.error);
   
@@ -25,7 +26,7 @@ client.on('message', message => {
     var name = message.content.replace("rename "+userid+" ","")
     try {
      message.guild.members.cache.get(userid).setNickname("²² | "+name.replace("²² | "," "))
-     message.react("👍")
+    // message.react("👍")
      message.channel.send("Done renaming <@!"+userid+">"); 
      setTimeout(function(){
     //  message.delete()
