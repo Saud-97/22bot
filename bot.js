@@ -8,7 +8,9 @@ client.once('ready', () => {
     client.user.setStatus('DND');
 client.user.setPresence({ activity: { name: 'S97 Commands', type: 'LISTENING' }, status: 'idle' })
 //  client.user.setPresence({ activity: { name: 'with S97 Code'}, status: 'idle' })
-  .then(console.log)
+  .then(
+  //console.log
+)
   .catch(console.error);
   
 });
