@@ -53,7 +53,14 @@ client.on('voiceStateUpdate', (oldState, newState) => {
     var check = oldPerms.has(['VIEW_CHANNEL', 'PRIORITY_SPEAKER']);
     if (check) {
       try {
-        client.channels.cache.get(oldID).permissionOverwrites.get(member.id).delete();
+        //client.channels.cache.get(oldID).permissionOverwrites.get(member.id).delete();
+        
+         client.channels.cache.get(newID).updateOverwrite(member, {
+        VIEW_CHANNEL: false,
+        PRIORITY_SPEAKER: false
+      }).catch(console.error);
+        
+        
         console.log(member.nickname + " have been revoked access to view video")
       } catch{
       }
