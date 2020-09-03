@@ -1,3 +1,6 @@
+//todo, make temp role
+// add perm view channel for the role when a member joins a channel that he doesn't have view channel in and give that member the temp role.
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
