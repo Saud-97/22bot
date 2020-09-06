@@ -21,7 +21,7 @@ client.user.setPresence({ activity: { name: 'S97 Commands', type: 'LISTENING' },
 client.on('message', message => {
   if (message.content == "clear" || message.content == "CLEAR" || message.content == "lsp" || message.content == "مسح") {
         if (message.member.hasPermission("MANAGE_MESSAGES")) {
-            message.channel.fetchMessages()
+            message.channel.messages.fetch()
                .then(function(list){
                     message.channel.bulkDelete(100);
                   message.reply("done");
