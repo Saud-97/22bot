@@ -32,9 +32,9 @@ client.on('message', message => {
   */
   
   if(message.channel.id == "754972017530372117" && !(message.content.startsWith("-اقترح"))){
-    if(message.author.bot) return;
+    if(!message.author.bot)       message.delete();
     
-      message.delete()
+
   }
   
   if (message.content.toLowerCase() === 's97') {
