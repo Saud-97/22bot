@@ -31,7 +31,7 @@ client.on('message', message => {
     }
   */
   
-  if(message.channel.id == "733457493623177266" && !message.content.startsWith("-اقترح")){
+  if(message.channel.id == "733457493623177266" && !(message.content.toLowerCase().startsWith("-اقترح"))){
       message.delete()
   }
   
