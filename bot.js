@@ -31,7 +31,7 @@ client.on('message', message => {
     }
   */
   
-  if(message.channel.id == "754975131230535680" && !(message.content.startsWith("-اقترح"))){
+  if(message.channel.id == "754972017530372117" && !(message.content.startsWith("-اقترح"))){
     if(message.author.bot) return;
     
       message.delete()
