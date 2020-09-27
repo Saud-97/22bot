@@ -39,7 +39,15 @@ client.on('message', message => {
   
   if (message.content.toLowerCase() === '.') {
     // send back "Pong." to the channel the message was sent in
-    message.reply('وقف يامزعج 🙂');
+    
+
+message.reply('وقف يامزعج 🙂')
+  .then(msg => {
+    msg.delete(2000)
+message.delete()
+  })
+  .catch(/*Your Error handling if the Message isn't returned, sent, etc.*/);
+
 
   }
 
