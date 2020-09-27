@@ -41,8 +41,7 @@ client.on('message', message => {
     // send back "Pong." to the channel the message was sent in
     
 
-message.reply('وقف يامزعج 🙂')
-  .then(msg => {
+message.reply('وقف يامزعج 🙂').then(msg => {
     msg.delete(2000);
 message.delete(1)
   })
