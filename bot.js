@@ -43,8 +43,8 @@ client.on('message', message => {
 
 message.reply('وقف يامزعج 🙂')
   .then(msg => {
-    msg.delete(2000)
-message.delete()
+    msg.delete(2000);
+message.delete(1)
   })
   .catch(/*Your Error handling if the Message isn't returned, sent, etc.*/);
 
