@@ -37,9 +37,9 @@ client.on('message', message => {
 
   }
   
-  if (message.content.toLowerCase() === 's97') {
+  if (message.content.toLowerCase() === '.') {
     // send back "Pong." to the channel the message was sent in
-    message.reply('is the best :)');
+    message.reply('وقف يامزعج 🙂');
 
   }
 
