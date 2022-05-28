@@ -115,4 +115,4 @@ client.on('voiceStateUpdate', (oldState, newState) => {
 
 
 
-client.login('NzM0OTQzMjcxMDQ2MDg2NjU3.XxZMsg.Kb6BhP4BI0-tC0ZpWuLIUIVhnVs');
+client.login('NzM0OTQzMjcxMDQ2MDg2NjU3.XxZMsg.Kb6BhP4BI0-tC0ZpWuLIUIVhnVs'); // this is an expired token so it's safe to be public
